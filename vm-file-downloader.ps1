@@ -1,4 +1,5 @@
 # This Script Finds Downloads Virtual Machine Screenshots, Logs or any other files from the Datastore VM directory to your local machine.
+# Tested on vSphere 6.7 Update 3, vSAN 6.7 Update 3 and VMFS 6.
 # Script Author: Nicholas Mangraviti #VirtuallyWired
 # Version: 1.0
 # Blog URL: virtuallywired.io
