@@ -1,7 +1,7 @@
 # This Script Finds Downloads Virtual Machine Screenshots, Logs or any other files from the Datastore VM directory to your local machine.
+# Version: 1.0
 # Tested on vSphere 6.7 Update 3, vSAN 6.7 Update 3 and VMFS 6.
 # Script Author: Nicholas Mangraviti #VirtuallyWired
-# Version: 1.0
 # Blog URL: virtuallywired.io
 # Usage: Just the vCenter URL or IP, VM Name, Item Type, eg. LOG or PNG for Screenshots, specify the local path to download the file to.
 
@@ -12,7 +12,7 @@ $VM = "win2016"
 $ItemType = "PNG" # This is the Extension of the file/s you want to download, eg. log, png
 $LocalPath = "C:\VM_LOGS" #LocalPath of location to Download files to
 
-## Don't Edit Below Line ##
+## Don't Edit Below This Line ##
 
 $VC = Connect-VIServer -Server $vCenter -Credential $Creds
 
