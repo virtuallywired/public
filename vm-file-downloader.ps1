@@ -3,7 +3,7 @@
 # Tested on vSphere 6.7 Update 3, vSAN 6.7 Update 3 and VMFS 6.
 # Script Author: Nicholas Mangraviti #VirtuallyWired
 # Blog URL: virtuallywired.io
-# Usage: Just the vCenter URL or IP, VM Name, Item Type, eg. LOG or PNG for Screenshots, specify the local path to download the file to.
+# Usage: Just enter the vCenter URL or IP, VM Name, Item Type, eg. LOG or PNG for Screenshots, specify the local path to download the file to.
 
 $vCenter = "vc.virtuallywired.io"
 $Creds = Get-Credential # Prompt for vCenter Credentials
