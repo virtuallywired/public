@@ -1,8 +1,9 @@
 # This script extracts the Rules from vSAN Storage Policies and formats into a report.
-# Tested on vSphere 6.7 Update 3.
+# Added Email Feature with HTML Formatting 
+# Tested on vSphere 6.7 Update 3.
 # Script Author: Nicholas Mangraviti #VirtuallyWired
-# Date: 20th October 2019
-# Version: 1.0
+# Date: 9th December 2019
+# Version: 1.1
 # Blog URL: virtuallywired.io
 # Usage: Just enter the vCenter URL or IP and Specify the Names of Policies to Explude from the Report.
 
