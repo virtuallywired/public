@@ -5,8 +5,19 @@
 # Date: 9th December 2019
 # Version: 1.1
 # Blog URL: virtuallywired.io
-# Usage: Just enter the vCenter URL or IP and Specify the Names of Policies to Explude from the Report.
+# Usage: Just enter the vCenter URL or IP and Specify the Names of Policies to Exclude from the Report.
 
+## Setup Email parameters
+
+$ReportTitle = "vSAN Storage Policy Rules Report"
+
+$subject = $("$ReportTitle - $date")
+$priority = "Normal"
+$smtpServer = "smtp.gmail.com"
+$emailFrom = "company@email.com"
+$mailsend = "company@email.com" 
+$emailTo = $mailsend
+$emailCreds = Get-Credential # Or Import Stored Credentials
 
 # You can add multiple vCenter Servers. Note Credentials need to work on all vCenters.
 
@@ -64,18 +75,6 @@ Disconnect-VIServer * -Force -Confirm:$false -ErrorAction SilentlyContinue�
 $RuleSetReport | Format-Table -Property *
 
 ## Create HTML Email Report
-
-## Setup Email parameters
-
-$ReportTitle = "vSAN Storage Policy Rules Report"
-
-$subject = $("$ReportTitle - $date")
-$priority = "Normal"
-$smtpServer = "smtp.gmail.com"
-$emailFrom = "company@email.com"
-$mailsend = "company@email.com" 
-$emailTo = $mailsend
-$emailCreds = Get-Credential # Or Import Stored Credentials
 
 $Date = (Get-Date -Format F).ToString()
 
