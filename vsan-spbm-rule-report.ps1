@@ -4,7 +4,7 @@
 # Date: 20th October 2019
 # Version: 1.0
 # Blog URL: virtuallywired.io
-# Usage: Just enter the vCenter URL or IP and Specify the Names of Policies to Explude from the Report.
+# Usage: Just enter the vCenter URL or IP and Specify the Names of Policies to Exclude from the Report.
 
 
 # You can add multiple vCenter Servers. Note Credentials need to work on all vCenters.
