@@ -9,11 +9,11 @@
 
 # You can add multiple vCenter Servers. Note Credentials need to work on all vCenters.
 
-$vCenter = ("vca.vmlabs.cloud") 
+$vCenter = ("vc.virtuallywired.io") 
 
 # Prompt for vCenter Credentials
 
-$Creds = Get-Credential 
+$Creds = Get-Credential # Or Import Stored Credentials
 
 # If you want to Exclude specific vSAN Policies from the Report, Add the name of the policy to this Array.
 
