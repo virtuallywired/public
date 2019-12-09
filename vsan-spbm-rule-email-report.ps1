@@ -87,7 +87,6 @@ $fragments += "<H1>$($ReportTitle)</H1>" 
 
 for ($i = 1; $i -le $html.table.tr.count - 1; $i++) {
     if ($html.table.tr[$i].td[10] -eq "RAID-0 (No Data Redundancy)") {
-        #$html.table.tr[$i].td[10]
         $class = $html.CreateAttribute("class")
         $class.value = 'alert'
         $html.table.tr[$i].childnodes[10].attributes.append($class) | out-null
