@@ -5,7 +5,7 @@ function Disable-VmReplicationState {
    Disables VM Replication State
    
    .DESCRIPTION
-   Disables VM Replication State Requires Posh-SSH
+   Disables VM Replication State Requires Posh-SSH - Install-Module Posh-SSH  to Run on Powershell 7 Posh-SSH version 3.x or higher is required.
    
    .EXAMPLE
    Disable-VmReplicationState -vCenter "vc.virtuallywired.io" -VcCredentials $vccreds -VmName $vm -EsxiCredentials $esxicreds 
