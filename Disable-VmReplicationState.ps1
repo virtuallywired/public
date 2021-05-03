@@ -17,7 +17,10 @@ function Disable-VmReplicationState {
    Output from this cmdlet (if any)
    
    .NOTES
-   Must be connected to vCenter for this function to operate and vCenter and ESXi credentials must be Encrypted
+   Must be connected to vCenter for this function to operate and vCenter and ESXi credentials must be Encrypted.
+   
+   .AUTHOR
+   Nicholas Mangraviti - virtuallywired.io
    #>
    
     [CmdletBinding(DefaultParameterSetName = 'Parameter Set 1', 
